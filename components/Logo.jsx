@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <Image
-        src={`/logo-${theme === "dark" ? "dark" : "light"}.svg`}
+        src={"/logo.svg"}
         alt="Logo"
         width={54}
         height={54}
