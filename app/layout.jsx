@@ -1,5 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 // Components
 import Header from "@/components/Header";
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>
