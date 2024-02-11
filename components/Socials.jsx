@@ -7,10 +7,12 @@ const icons = [
   {
     path: "/",
     icon: <RiLinkedinFill />,
+    text: "LinkedIn",
   },
   {
     path: "/",
     icon: <RiGithubFill />,
+    text: "GitHub",
   },
 ];
 
@@ -20,7 +22,9 @@ const Socials = ({ containerStyles, iconStyles }) => {
       {icons.map((icon, index) => {
         return (
           <Link key={index} href={icon.path}>
-            <div className={`${iconStyles}`}>{icon.icon}</div>
+            <div className={`${iconStyles}`} aria-label={icon.text}>
+              {icon.icon}
+            </div>
           </Link>
         );
       })}

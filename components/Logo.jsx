@@ -5,15 +5,8 @@ import Link from "next/link";
 const Logo = () => {
   const { theme, setTheme } = useTheme();
   return (
-    <Link href="/">
-      <Image
-        src={"/logo.svg"}
-        alt="Logo"
-        width={54}
-        height={54}
-        priority
-        alt=""
-      />
+    <Link href="/" aria-label="Home">
+      <Image src={"/logo.svg"} alt="Logo" width={54} height={54} priority />
     </Link>
   );
 };
