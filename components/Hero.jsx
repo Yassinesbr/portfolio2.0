@@ -11,6 +11,11 @@ import Socials from "./Socials";
 import DevImg from "./DevImg";
 import Badge from "./Badge";
 
+function getYearDiff(date1, date2) {
+  return Math.abs(date2.getFullYear() - date1.getFullYear());
+}
+const yearsOfExperience = getYearDiff(new Date(), new Date("2020-03-16"));
+
 const Hero = () => {
   return (
     <section className="p-12 xl:p-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
@@ -49,7 +54,7 @@ const Hero = () => {
             <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase4Fill />}
-              endCountNum={3}
+              endCountNum={yearsOfExperience}
               badgeText="Years of experience"
             />
             <Badge
