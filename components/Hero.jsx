@@ -14,7 +14,10 @@ import Badge from "./Badge";
 function getYearDiff(date1, date2) {
   return Math.abs(date2.getFullYear() - date1.getFullYear());
 }
-const yearsOfExperience = getYearDiff(new Date(), new Date("2020-03-16"));
+export const yearsOfExperience = getYearDiff(
+  new Date(),
+  new Date("2020-03-16")
+);
 
 const Hero = () => {
   return (
